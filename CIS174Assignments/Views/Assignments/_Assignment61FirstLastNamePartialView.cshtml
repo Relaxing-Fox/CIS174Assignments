@@ -1,0 +1,21 @@
+﻿@model CIS174Assignments.ViewModels.StudentsViewModel
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+        </tr>
+        <tr></tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.StudentList)
+        {
+            <tr>
+                <td>@item.FirstName</td>
+                <td>@item.LastName</td>
+            </tr>
+        }
+    </tbody>
+</table>
